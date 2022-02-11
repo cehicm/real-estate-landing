@@ -191,3 +191,22 @@ body {
 		color: colors.$white;
 	}
 }
+
+.footer {
+	&__list {
+		&__title {
+			font-family: "Lato";
+			font-size: 20px;
+			font-weight: 700;
+			line-height: 24px;
+		}
+
+		&__item,
+		&__item a {
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 24px;
+			color: colors.$text-light-gray;
+		}
+	}
+}

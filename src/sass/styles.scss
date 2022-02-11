@@ -5,6 +5,11 @@
 @use "variables/colors";
 @use "variables/breakpoints";
 
+//General
+@use "layout/general";
+@use "layout/typography";
+@use "variables/fonts";
+
 //Components
 @use "components/components";
 
@@ -12,16 +17,13 @@
 @use "helpers/animations";
 
 //Layout
-@use "variables/fonts";
-@use "layout/general";
 @use "layout/navigation";
 @use "layout/header";
-@use "layout/footer";
-@use "layout/typography";
 @use "layout/main";
 @use "layout/featured";
 @use "layout/stats";
 @use "layout/cta";
+@use "layout/footer";
 
 //Pages
 @use "pages/homepage";

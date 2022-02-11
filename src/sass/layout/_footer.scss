@@ -1,0 +1,30 @@
+.footer {
+	padding: 20px;
+
+	&__top {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+		align-items: center;
+		text-align: center;
+	}
+
+	&__list {
+		&__title {
+			margin-bottom: 30px;
+		}
+
+		&__item {
+			padding: 10px;
+		}
+
+		&__social {
+			display: flex;
+			justify-content: space-around;
+		}
+	}
+
+	&__bottom {
+		margin: 40px 0;
+	}
+}
