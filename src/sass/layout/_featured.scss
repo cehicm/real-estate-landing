@@ -1,0 +1,57 @@
+@use "../variables/colors" as colors;
+@import "../variables/breakpoints";
+
+.featured {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	background-color: colors.$featured-bg-gray;
+
+	&__title {
+		padding: 20px 0;
+	}
+
+	&__cta__text {
+		padding: 20px 0;
+	}
+
+	&__cta__link > a {
+		padding-right: 10px;
+		color: colors.$text-light-blue;
+	}
+
+	&__item {
+		background-color: colors.$white;
+		border-radius: 12px;
+		margin-bottom: 20px;
+
+		&__image {
+			width: 100%;
+		}
+
+		&__description {
+			padding: 10px 0 20px 0;
+		}
+
+		&__content {
+			padding: 15px;
+		}
+
+		&__stats {
+			display: flex;
+			justify-content: space-between;
+
+			.stat {
+				display: flex;
+				align-items: center;
+
+				&__text {
+					@include sc-breakpoint(375) {
+						padding-left: 5px;
+					}
+				}
+			}
+		}
+	}
+}
