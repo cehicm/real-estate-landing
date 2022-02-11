@@ -167,6 +167,17 @@ body {
   line-height: 27px;
 }
 
+.cta__title {
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 35px;
+  color: #ffffff;
+  text-align: center;
+}
+.cta__text {
+  color: #ffffff;
+}
+
 ul > li {
   list-style: none;
 }
@@ -375,12 +386,14 @@ p {
 .stats__numbers {
   margin: 40px 0;
 }
-.stats__numbers__title {
-  font-size: 64px;
-  line-height: 64px;
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: #063183;
 }
-.stats__numbers__text {
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 27px;
+.cta__image img {
+  width: 100%;
 }

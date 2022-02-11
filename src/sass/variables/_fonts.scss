@@ -177,3 +177,17 @@ body {
 		}
 	}
 }
+
+.cta {
+	&__title {
+		font-size: 35px;
+		font-weight: 600;
+		line-height: 35px;
+		color: colors.$white;
+		text-align: center;
+	}
+
+	&__text {
+		color: colors.$white;
+	}
+}
