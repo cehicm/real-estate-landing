@@ -121,7 +121,7 @@ body {
 .featured__item__description {
   color: #7d8589;
 }
-.featured__item .stat__text {
+.featured__item .info__text {
   font-size: 14px;
   font-weight: 500;
   line-height: 14px;
@@ -299,12 +299,12 @@ p {
   display: flex;
   justify-content: space-between;
 }
-.featured__item__stats .stat {
+.featured__item__stats .info {
   display: flex;
   align-items: center;
 }
 @media (min-width: 375px) {
-  .featured__item__stats .stat__text {
+  .featured__item__stats .info__text {
     padding-left: 5px;
   }
 }
