@@ -1,0 +1,51 @@
+.visual {
+	&__title__arrow {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__image,
+	&__icons {
+		img {
+			width: 100%;
+		}
+	}
+
+	&__image {
+		padding: 20px 0;
+	}
+
+	&__text {
+		padding: 20px 0;
+	}
+
+	&__numbers {
+		width: 80%;
+		margin: 0 auto;
+	}
+}
+
+.stats {
+	padding: 20px;
+
+	&__textual {
+		&__text {
+			padding: 20px 0;
+		}
+	}
+
+	&__numbers {
+		margin: 40px 0;
+
+		&__title {
+			font-size: 64px;
+			line-height: 64px;
+		}
+
+		&__text {
+			font-size: 18px;
+			font-weight: 500;
+			line-height: 27px;
+		}
+	}
+}

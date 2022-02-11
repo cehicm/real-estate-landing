@@ -25,7 +25,6 @@ body {
 
 		@include sc-breakpoint(768) {
 			font-size: 64px;
-
 			line-height: 76px;
 		}
 	}
@@ -35,6 +34,7 @@ body {
 		font-weight: 400;
 		line-height: 32px;
 		color: colors.$text-light-gray;
+		text-align: justify;
 	}
 }
 
@@ -74,6 +74,7 @@ body {
 			font-size: 16px;
 			font-weight: 400;
 			line-height: 30px;
+			text-align: justify;
 		}
 	}
 
@@ -124,6 +125,55 @@ body {
 			font-weight: 500;
 			line-height: 14px;
 			color: colors.$black;
+		}
+	}
+}
+
+.stats {
+	.visual {
+		&__title {
+			font-size: 26px;
+			font-weight: 500;
+			line-height: 26px;
+		}
+
+		&__text {
+			font-size: 12px;
+			font-weight: 400;
+			line-height: 18px;
+			color: colors.$text-light-gray;
+		}
+	}
+
+	&__textual {
+		&__title {
+			font-size: 35px;
+			font-weight: 600;
+			line-height: 45px;
+			text-align: center;
+		}
+
+		&__text {
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 30px;
+			color: colors.$text-light-gray;
+			text-align: justify;
+		}
+	}
+
+	&__numbers {
+		text-align: center;
+
+		&__title {
+			font-size: 64px;
+			line-height: 64px;
+		}
+
+		&__text {
+			font-size: 18px;
+			font-weight: 500;
+			line-height: 27px;
 		}
 	}
 }

@@ -55,6 +55,7 @@ body {
   font-weight: 400;
   line-height: 32px;
   color: #7d8589;
+  text-align: justify;
 }
 
 .main .reviews__text,
@@ -89,6 +90,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 30px;
+  text-align: justify;
 }
 .main .guide__item__title {
   font-size: 20px;
@@ -126,6 +128,43 @@ body {
   font-weight: 500;
   line-height: 14px;
   color: #3b3c45;
+}
+
+.stats .visual__title {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 26px;
+}
+.stats .visual__text {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #7d8589;
+}
+.stats__textual__title {
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 45px;
+  text-align: center;
+}
+.stats__textual__text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #7d8589;
+  text-align: justify;
+}
+.stats__numbers {
+  text-align: center;
+}
+.stats__numbers__title {
+  font-size: 64px;
+  line-height: 64px;
+}
+.stats__numbers__text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
 }
 
 ul > li {
@@ -307,4 +346,41 @@ p {
   .featured__item__stats .info__text {
     padding-left: 5px;
   }
+}
+
+.visual__title__arrow {
+  display: flex;
+  justify-content: space-between;
+}
+.visual__image img, .visual__icons img {
+  width: 100%;
+}
+.visual__image {
+  padding: 20px 0;
+}
+.visual__text {
+  padding: 20px 0;
+}
+.visual__numbers {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.stats {
+  padding: 20px;
+}
+.stats__textual__text {
+  padding: 20px 0;
+}
+.stats__numbers {
+  margin: 40px 0;
+}
+.stats__numbers__title {
+  font-size: 64px;
+  line-height: 64px;
+}
+.stats__numbers__text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
 }
