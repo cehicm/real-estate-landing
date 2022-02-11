@@ -1,3 +1,6 @@
+@use "../variables/colors" as colors;
+@import "../variables/breakpoints";
+
 body {
 	font-family: "Poppins";
 }
@@ -6,4 +9,83 @@ body {
 	font-size: 14px;
 	font-weight: 500;
 	line-height: 21px;
+}
+
+.header {
+	&__title {
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 27px;
+		color: colors.$text-light-gray;
+	}
+
+	&__title--large {
+		font-weight: 700;
+		font-size: 34px;
+
+		@include sc-breakpoint(768) {
+			font-size: 64px;
+
+			line-height: 76px;
+		}
+	}
+
+	&__text {
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 32px;
+		color: colors.$text-light-gray;
+	}
+}
+
+.main {
+	.about__content {
+		text-align: center;
+
+		&__title {
+			font-size: 35px;
+			font-weight: 600;
+			line-height: 35px;
+			padding: 20px 0;
+			color: colors.$black;
+
+			&::before {
+				content: "";
+				position: absolute;
+				display: block;
+				height: 7px;
+				width: 100px;
+				right: 50%;
+				transform: translate(50%, -120%);
+				border-radius: 6px;
+				background-color: colors.$black;
+			}
+		}
+
+		&__text {
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 30px;
+		}
+	}
+
+	.guide__item {
+		&__title {
+			font-size: 20px;
+			font-weight: 500;
+			line-height: 22px;
+			color: colors.$black;
+		}
+
+		&__link > a {
+			color: colors.$text-light-blue;
+		}
+	}
+}
+.reviews__text,
+.reviews__text > a {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 20px;
+	color: colors.$text-light-gray;
 }
