@@ -1,0 +1,23 @@
+@use "../variables/colors" as colors;
+
+.button {
+	border: none;
+	border-radius: 12px;
+	display: flex;
+
+	padding: 10px 15px;
+
+	&--white {
+		color: colors.$text-dark-blue;
+		background-color: colors.$white;
+	}
+
+	&--full {
+		color: colors.$white;
+		background-color: colors.$button-dark-blue;
+	}
+
+	&--transparent {
+		background: none;
+	}
+}
