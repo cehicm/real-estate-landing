@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<link rel="stylesheet" href="/dist/css/styles.css" />
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -17,38 +18,47 @@
 					<img src="/src/images/logos/Besnik..svg" alt="Besnik logo" />
 				</a>
 			</div>
-			<ul class="nav__list">
-				<li class="nav__list__item">
-					Home
-				</li>
-				<li class="nav-list__item">
-					Features
-				</li>
-				<li class="nav-list__item">
-					Service
-				</li>
-				<li class="nav-list__item">
-					Listed
-				</li>
-				<li class="nav-list__item">
-					Contact
-				</li>
-			</ul>
-			<div class="nav__buttons">
-				<button class="button button--transparent">Sign up</button>
-				<button class="button button--full">Register</button>
+			<svg class="nav__menu__icon" width="24" height="18" xmlns="http://www.w3.org/2000/svg">
+				<path d="M24 16v2H0v-2h24zm0-8v2H0V8h24zm0-8v2H0V0h24z" fill="#FFF" fill-rule="evenodd"></path>
+			</svg>
+			<div class="nav__menu">
+				<ul class="nav__list">
+					<li class="nav__list__item">
+						Home
+					</li>
+					<li class="nav__list__item">
+						Features
+					</li>
+					<li class="nav__list__item">
+						Service
+					</li>
+					<li class="nav__list__item">
+						Listed
+					</li>
+					<li class="nav__list__item">
+						Contact
+					</li>
+				</ul>
+				<div class="nav__buttons">
+					<button class="button button--transparent">Sign up</button>
+					<button class="button button--full">Register</button>
+				</div>
 			</div>
+
 		</nav>
 
-		<h1 class="header__title">Welcome to Basnik Agency</h1>
-		<h2 class="header__title--large">
-			Discover a place you'll love to live.
-		</h2>
-		<p class="header__text">
-			Get the best real estate deals first, before they hit the mass market!
-			HOT FORECLOSURE DEALS with one simple search
-		</p>
-		<button class="button button--full header__button ">More About Us</button>
+		<div class="header__content">
+			<h1 class="header__title">Welcome to Basnik Agency</h1>
+			<h2 class="header__title--large">
+				Discover a place you'll love to live.
+			</h2>
+			<p class="header__text">
+				Get the best real estate deals first, before they hit the mass market!
+				HOT FORECLOSURE DEALS with one simple search
+			</p>
+			<button class="button button--full header__button ">More About Us</button>
+		</div>
+
 	</header>
 
 	<div class="container">

@@ -1,11 +1,11 @@
 @use "../variables/colors" as colors;
 
 .button {
+	display: flex;
+	justify-content: center;
+	padding: 12px 15px;
 	border: none;
 	border-radius: 12px;
-	display: flex;
-
-	padding: 10px 15px;
 
 	&--white {
 		color: colors.$text-dark-blue;
@@ -19,5 +19,9 @@
 
 	&--transparent {
 		background: none;
+
+		&:hover {
+			border: 1px solid colors.$button-dark-blue;
+		}
 	}
 }
