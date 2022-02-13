@@ -6,8 +6,8 @@
 	background-color: colors.$background-light-blue;
 
 	@include sc-breakpoint(768) {
-		background-image: url("/src/images/house\ illustration.svg");
-		background-repeat: no-repeat;
+		// background-image: url("/src/images/house\ illustration.svg");
+		// background-repeat: no-repeat;
 	}
 
 	&__content {
@@ -20,7 +20,6 @@
 
 		.header__button {
 			margin-top: 10px;
-
 			border-radius: 8px;
 		}
 	}
@@ -29,6 +28,11 @@
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 
+		@include sc-breakpoint(1024) {
+			grid-template-columns: repeat(12, 1fr);
+			align-items: center;
+		}
+
 		&__menu {
 			display: none;
 			width: 100%;
@@ -36,13 +40,36 @@
 			padding: 15px 0;
 			background-color: colors.$white;
 
+			@include sc-breakpoint(1024) {
+				display: grid;
+				background: none;
+				grid-row: 1;
+				grid-column: 3/-1;
+			}
+
 			&__icon {
 				justify-self: flex-end;
+
+				@include sc-breakpoint(1024) {
+					display: none;
+				}
+			}
+		}
+
+		&__logo {
+			@include sc-breakpoint(1024) {
+				grid-row: 1;
+				grid-column: 1;
 			}
 		}
 
 		&__list {
 			text-align: center;
+
+			@include sc-breakpoint(1024) {
+				display: flex;
+				gap: 20px;
+			}
 
 			&__item {
 				padding: 10px 0;
@@ -54,6 +81,13 @@
 			flex-direction: column;
 			align-items: center;
 			margin: 10px 0;
+
+			@include sc-breakpoint(1024) {
+				flex-direction: row;
+				grid-column: 12;
+				justify-self: end;
+				margin: 0;
+			}
 
 			button {
 				width: 100px;
