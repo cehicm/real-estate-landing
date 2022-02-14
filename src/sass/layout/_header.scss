@@ -5,9 +5,12 @@
 	padding: 20px;
 	background-color: colors.$background-light-blue;
 
-	@include sc-breakpoint(768) {
-		// background-image: url("/src/images/house\ illustration.svg");
-		// background-repeat: no-repeat;
+	@include sc-breakpoint(1024) {
+		padding: 3% 6%;
+		background-image: url("/src/images/house\ illustration.svg");
+		background-repeat: no-repeat;
+		background-position: right bottom;
+		background-size: 350px;
 	}
 
 	&__content {
@@ -17,6 +20,13 @@
 		gap: 12px;
 		padding: 25px 0;
 		text-align: center;
+
+		@include sc-breakpoint(1024) {
+			width: 60%;
+			align-items: flex-start;
+			padding: 10px;
+			text-align: left;
+		}
 
 		.header__button {
 			margin-top: 10px;

@@ -257,6 +257,15 @@ body {
   padding: 20px;
   background-color: #e6f0ff;
 }
+@media (min-width: 1024px) {
+  .header {
+    padding: 3% 6%;
+    background-image: url("/src/images/house illustration.svg");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 350px;
+  }
+}
 .header__content {
   display: flex;
   flex-direction: column;
@@ -264,6 +273,14 @@ body {
   gap: 12px;
   padding: 25px 0;
   text-align: center;
+}
+@media (min-width: 1024px) {
+  .header__content {
+    width: 60%;
+    align-items: flex-start;
+    padding: 10px;
+    text-align: left;
+  }
 }
 .header__content .header__button {
   margin-top: 10px;
