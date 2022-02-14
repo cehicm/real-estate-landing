@@ -1,4 +1,11 @@
+@use "../variables/colors" as colors;
+@import "../variables/breakpoints";
+
 .visual {
+	@include sc-breakpoint(1024) {
+		position: relative;
+	}
+
 	&__title__arrow {
 		display: flex;
 		justify-content: space-between;
@@ -13,6 +20,11 @@
 
 	&__image {
 		padding: 20px 0;
+
+		@include sc-breakpoint(1024) {
+			position: absolute;
+			left: 100px;
+		}
 	}
 
 	&__text {
@@ -22,13 +34,47 @@
 	&__numbers {
 		width: 80%;
 		margin: 0 auto;
+
+		@include sc-breakpoint(1024) {
+			width: 40%;
+			position: absolute;
+			left: 40px;
+			padding: 20px;
+			background: colors.$white;
+			z-index: 2;
+		}
 	}
 }
 
 .stats {
 	padding: 20px;
 
+	@include sc-breakpoint(1024) {
+		padding: 40px 20px;
+	}
+
+	&__top {
+		@include sc-breakpoint(1024) {
+			display: grid;
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+			align-content: center;
+			padding-top: 50px;
+		}
+	}
+
+	// // &__visual {
+	// // 	@include sc-breakpoint(1024) {
+	// // 		position: relative;
+	// // 	}
+	// // }
+
 	&__textual {
+		@include sc-breakpoint(1024) {
+			width: 60%;
+			padding: 100px 0;
+			justify-self: center;
+		}
+
 		&__text {
 			padding: 20px 0;
 		}
@@ -36,5 +82,12 @@
 
 	&__numbers {
 		margin: 40px 0;
+	}
+
+	&__bottom {
+		@include sc-breakpoint(1024) {
+			display: flex;
+			justify-content: space-around;
+		}
 	}
 }

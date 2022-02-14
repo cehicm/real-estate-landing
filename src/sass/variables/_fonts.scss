@@ -160,6 +160,27 @@ body {
 			font-weight: 600;
 			line-height: 45px;
 			text-align: center;
+
+			@include sc-breakpoint(1024) {
+				text-align: left;
+			}
+
+			&::before {
+				content: "";
+				position: absolute;
+				display: block;
+				height: 7px;
+				width: 100px;
+				right: 50%;
+				transform: translate(50%, -120%);
+				border-radius: 6px;
+				background-color: colors.$black;
+
+				@include sc-breakpoint(1024) {
+					width: 45px;
+					right: 38%;
+				}
+			}
 		}
 
 		&__text {
@@ -183,6 +204,7 @@ body {
 			font-size: 18px;
 			font-weight: 500;
 			line-height: 27px;
+			color: colors.$text-light-gray;
 		}
 	}
 }
