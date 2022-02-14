@@ -563,6 +563,11 @@ body {
   background-color: #f5fafe;
 }
 @media (min-width: 1024px) {
+  .featured {
+    padding: 5% 8%;
+  }
+}
+@media (min-width: 1024px) {
   .featured__cta {
     display: flex;
     align-items: center;

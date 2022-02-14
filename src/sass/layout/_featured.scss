@@ -8,6 +8,10 @@
 	gap: 40px;
 	background-color: colors.$featured-bg-gray;
 
+	@include sc-breakpoint(1024) {
+		padding: 5% 8%;
+	}
+
 	&__cta {
 		@include sc-breakpoint(1024) {
 			display: flex;
