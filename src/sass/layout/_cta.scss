@@ -8,20 +8,25 @@
 	background-color: colors.$background-dark-blue;
 
 	@include sc-breakpoint(1024) {
-		height: 280px;
 		flex-direction: row;
-		width: 80%;
-		margin: 0 auto;
+	}
+
+	&__wrapper {
+		@include sc-breakpoint(1024) {
+			display: flex;
+			position: relative;
+			height: 330px;
+		}
 	}
 
 	&__content {
 		display: flex;
 		flex-direction: column;
 		gap: 20px;
+		padding: 20px 0;
 		text-align: center;
 
 		@include sc-breakpoint(1024) {
-			position: relative;
 			justify-content: center;
 			gap: 25px;
 			padding: 40px;
@@ -50,8 +55,8 @@
 		@include sc-breakpoint(1024) {
 			display: block;
 			position: absolute;
-			right: 0;
-			transform: translateY(-67px);
+			top: 0;
+			transform: translate(455px, -30px);
 		}
 
 		@include sc-breakpoint(1820) {

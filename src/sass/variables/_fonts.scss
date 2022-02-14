@@ -39,6 +39,10 @@ body {
 		@include sc-breakpoint(768) {
 			text-align: center;
 		}
+
+		@include sc-breakpoint(768) {
+			text-align: left;
+		}
 	}
 }
 
@@ -74,7 +78,6 @@ body {
 
 				@include sc-breakpoint(1024) {
 					width: 50px;
-					bottom: 160px;
 				}
 			}
 		}
@@ -182,7 +185,7 @@ body {
 
 				@include sc-breakpoint(1024) {
 					width: 45px;
-					right: 38%;
+					right: 42%;
 				}
 			}
 		}

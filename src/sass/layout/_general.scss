@@ -23,10 +23,17 @@ p {
 }
 
 .main,
-.featured,
 .stats,
 .cta,
 .footer {
+	margin: 8%;
+
+	@include sc-breakpoint(768) {
+		margin: 5% 8%;
+	}
+}
+
+.featured {
 	padding: 8%;
 
 	@include sc-breakpoint(768) {

@@ -10,7 +10,7 @@
 		background-image: url("/src/images/house\ illustration.svg");
 		background-repeat: no-repeat;
 		background-position: right bottom;
-		background-size: 350px;
+		background-size: 400px;
 	}
 
 	&__content {
@@ -22,9 +22,9 @@
 		text-align: center;
 
 		@include sc-breakpoint(1024) {
-			width: 60%;
+			width: 62%;
+			padding: 50px 0;
 			align-items: flex-start;
-			padding: 10px;
 			text-align: left;
 		}
 
