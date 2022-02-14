@@ -253,9 +253,16 @@ body {
   color: #000339;
   background-color: #ffffff;
 }
+.button--white:hover {
+  filter: invert(1);
+}
 .button--full {
   color: #ffffff;
   background-color: #0f1b4c;
+}
+.button--full:hover {
+  color: #000339;
+  background-color: #ffffff;
 }
 .button--transparent {
   background: none;
