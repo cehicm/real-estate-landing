@@ -1,3 +1,5 @@
+@import "../variables/breakpoints";
+
 .footer {
 	padding: 20px;
 
@@ -7,6 +9,12 @@
 		gap: 30px;
 		align-items: center;
 		text-align: center;
+
+		@include sc-breakpoint(1024) {
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: baseline;
+		}
 	}
 
 	&__list {
@@ -16,11 +24,21 @@
 
 		&__item {
 			padding: 10px;
+
+			@include sc-breakpoint(1024) {
+				padding: 10px 0;
+			}
 		}
 
 		&__social {
 			display: flex;
 			justify-content: space-around;
+		}
+
+		&__container {
+			@include sc-breakpoint(1024) {
+				text-align: left;
+			}
 		}
 	}
 
