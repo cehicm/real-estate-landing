@@ -715,6 +715,11 @@ body {
 }
 @media (min-width: 1400px) {
   .stats__bottom {
+    margin-top: 50px;
+  }
+}
+@media (min-width: 1820px) {
+  .stats__bottom {
     margin-top: 180px;
   }
 }

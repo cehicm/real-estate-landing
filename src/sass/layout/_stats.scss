@@ -89,6 +89,10 @@
 		}
 
 		@include sc-breakpoint(1400) {
+			margin-top: 50px;
+		}
+
+		@include sc-breakpoint(1820) {
 			margin-top: 180px;
 		}
 	}
