@@ -27,13 +27,18 @@ p {
 .stats,
 .cta,
 .footer {
-	margin: 20px;
+	padding: 8%;
 
-	@include sc-breakpoint(1024) {
-		margin: 50px 60px;
+	@include sc-breakpoint(768) {
+		padding: 5% 8%;
 	}
+}
 
-	@include sc-breakpoint(1400) {
-		margin: 50px 80px;
+.header,
+.container,
+.footer {
+	@include sc-breakpoint(1820) {
+		max-width: 2000px;
+		margin: 0 auto;
 	}
 }

@@ -8,17 +8,16 @@
 	background-color: colors.$background-dark-blue;
 
 	@include sc-breakpoint(1024) {
-		height: 320px;
-		width: 90%;
-		margin: 0 auto;
-		margin-top: 50px;
+		height: 280px;
 		flex-direction: row;
+		width: 80%;
+		margin: 0 auto;
 	}
 
 	&__content {
 		display: flex;
 		flex-direction: column;
-		gap: 10px;
+		gap: 20px;
 		text-align: center;
 
 		@include sc-breakpoint(1024) {
@@ -46,10 +45,17 @@
 	}
 
 	&__image {
+		display: none;
+
 		@include sc-breakpoint(1024) {
+			display: block;
 			position: absolute;
 			right: 0;
 			transform: translateY(-67px);
+		}
+
+		@include sc-breakpoint(1820) {
+			right: 26%;
 		}
 
 		img {
