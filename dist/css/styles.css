@@ -646,6 +646,48 @@ body {
   padding: 20px;
   background-color: #063183;
 }
+@media (min-width: 1024px) {
+  .cta {
+    height: 320px;
+    flex-direction: row;
+    margin-top: 50px;
+  }
+}
+.cta__content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .cta__content {
+    position: relative;
+    justify-content: center;
+    gap: 25px;
+  }
+}
+@media (min-width: 1024px) {
+  .cta__content > * {
+    text-align: left;
+  }
+}
+.cta__button {
+  width: 50%;
+  margin: 0 auto;
+}
+@media (min-width: 1024px) {
+  .cta__button {
+    margin: 0;
+    width: 150px;
+  }
+}
+@media (min-width: 1024px) {
+  .cta__image {
+    position: absolute;
+    right: 0;
+    transform: translateY(-67px);
+  }
+}
 .cta__image img {
   width: 100%;
 }
