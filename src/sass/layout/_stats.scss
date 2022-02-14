@@ -62,12 +62,6 @@
 		}
 	}
 
-	// // &__visual {
-	// // 	@include sc-breakpoint(1024) {
-	// // 		position: relative;
-	// // 	}
-	// // }
-
 	&__textual {
 		@include sc-breakpoint(1024) {
 			width: 60%;
