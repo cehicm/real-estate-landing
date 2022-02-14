@@ -7,11 +7,26 @@
 	flex-direction: column;
 	gap: 40px;
 
+	@include sc-breakpoint(1024) {
+		padding: 50px 80px;
+	}
+
 	.reviews {
 		display: flex;
 		flex-direction: column;
 		gap: 20px;
 		background-color: colors.$background-light-gray;
+
+		@include sc-breakpoint(1024) {
+			display: grid;
+			justify-content: space-between;
+		}
+
+		&__stars {
+			@include sc-breakpoint(1024) {
+				grid-column: 2;
+			}
+		}
 	}
 
 	.clients {
@@ -20,10 +35,20 @@
 		gap: 15px;
 		align-items: center;
 
+		@include sc-breakpoint(1024) {
+			display: flex;
+			gap: 60px;
+		}
+
 		&__logo {
 			img {
 				width: 100%;
 				height: 40px;
+				padding: 10px;
+
+				&:hover {
+					box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%);
+				}
 			}
 		}
 	}
@@ -33,9 +58,34 @@
 		flex-direction: column;
 		align-items: center;
 
+		@include sc-breakpoint(1024) {
+			padding: 40px 0;
+		}
+
 		&__guide {
 			gap: 20px;
 			padding: 20px 0;
+
+			@include sc-breakpoint(1024) {
+				display: flex;
+				gap: 100px;
+				text-align: center;
+			}
+
+			&__button {
+				@include sc-breakpoint(1024) {
+					margin-top: 20px;
+				}
+			}
+		}
+
+		&__content {
+			position: relative;
+
+			@include sc-breakpoint(1024) {
+				width: 55%;
+				padding-bottom: 50px;
+			}
 		}
 	}
 }

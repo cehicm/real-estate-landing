@@ -67,6 +67,11 @@ body {
 				transform: translate(50%, -120%);
 				border-radius: 6px;
 				background-color: colors.$black;
+
+				@include sc-breakpoint(1024) {
+					width: 50px;
+					bottom: 160px;
+				}
 			}
 		}
 
@@ -75,6 +80,10 @@ body {
 			font-weight: 400;
 			line-height: 30px;
 			text-align: justify;
+
+			@include sc-breakpoint(1024) {
+				text-align: center;
+			}
 		}
 	}
 

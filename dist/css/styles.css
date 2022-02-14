@@ -126,11 +126,22 @@ body {
   border-radius: 6px;
   background-color: #3b3c45;
 }
+@media (min-width: 1024px) {
+  .main .about__content__title::before {
+    width: 50px;
+    bottom: 160px;
+  }
+}
 .main .about__content__text {
   font-size: 16px;
   font-weight: 400;
   line-height: 30px;
   text-align: justify;
+}
+@media (min-width: 1024px) {
+  .main .about__content__text {
+    text-align: center;
+  }
 }
 .main .guide__item__title {
   font-size: 20px;
@@ -361,11 +372,27 @@ body {
   flex-direction: column;
   gap: 40px;
 }
+@media (min-width: 1024px) {
+  .main {
+    padding: 50px 80px;
+  }
+}
 .main .reviews {
   display: flex;
   flex-direction: column;
   gap: 20px;
   background-color: #fefefe;
+}
+@media (min-width: 1024px) {
+  .main .reviews {
+    display: grid;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1024px) {
+  .main .reviews__stars {
+    grid-column: 2;
+  }
 }
 .main .clients {
   display: grid;
@@ -373,18 +400,54 @@ body {
   gap: 15px;
   align-items: center;
 }
+@media (min-width: 1024px) {
+  .main .clients {
+    display: flex;
+    gap: 60px;
+  }
+}
 .main .clients__logo img {
   width: 100%;
   height: 40px;
+  padding: 10px;
+}
+.main .clients__logo img:hover {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 .main .about {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+@media (min-width: 1024px) {
+  .main .about {
+    padding: 40px 0;
+  }
+}
 .main .about__guide {
   gap: 20px;
   padding: 20px 0;
+}
+@media (min-width: 1024px) {
+  .main .about__guide {
+    display: flex;
+    gap: 100px;
+    text-align: center;
+  }
+}
+@media (min-width: 1024px) {
+  .main .about__guide__button {
+    margin-top: 20px;
+  }
+}
+.main .about__content {
+  position: relative;
+}
+@media (min-width: 1024px) {
+  .main .about__content {
+    width: 55%;
+    padding-bottom: 50px;
+  }
 }
 
 .featured {
