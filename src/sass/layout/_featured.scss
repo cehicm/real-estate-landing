@@ -8,17 +8,46 @@
 	gap: 40px;
 	background-color: colors.$featured-bg-gray;
 
+	@include sc-breakpoint(1024) {
+		padding: 50px 60px;
+	}
+
+	@include sc-breakpoint(1400) {
+		padding: 50px 80px;
+	}
+
+	&__cta {
+		@include sc-breakpoint(1024) {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin-bottom: 20px;
+		}
+	}
+
 	&__title {
 		padding: 20px 0;
 	}
 
 	&__cta__text {
 		padding: 20px 0;
+
+		@include sc-breakpoint(1024) {
+			padding: 0;
+		}
 	}
 
 	&__cta__link > a {
 		padding-right: 10px;
 		color: colors.$text-light-blue;
+	}
+
+	&__properties {
+		@include sc-breakpoint(1024) {
+			display: flex;
+			gap: 20px;
+			justify-content: space-between;
+		}
 	}
 
 	&__item {

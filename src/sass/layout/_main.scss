@@ -8,6 +8,10 @@
 	gap: 40px;
 
 	@include sc-breakpoint(1024) {
+		padding: 50px 60px;
+	}
+
+	@include sc-breakpoint(1400) {
 		padding: 50px 80px;
 	}
 
