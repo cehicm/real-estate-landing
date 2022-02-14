@@ -47,12 +47,6 @@
 }
 
 .stats {
-	padding: 20px;
-
-	@include sc-breakpoint(1024) {
-		padding: 40px 20px;
-	}
-
 	&__top {
 		@include sc-breakpoint(1024) {
 			display: grid;

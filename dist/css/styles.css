@@ -24,6 +24,32 @@ p {
   margin: 0;
 }
 
+.main,
+.featured,
+.stats,
+.cta,
+.footer {
+  margin: 20px;
+}
+@media (min-width: 1024px) {
+  .main,
+.featured,
+.stats,
+.cta,
+.footer {
+    margin: 50px 60px;
+  }
+}
+@media (min-width: 1400px) {
+  .main,
+.featured,
+.stats,
+.cta,
+.footer {
+    margin: 50px 80px;
+  }
+}
+
 /* poppins-regular - latin */
 @font-face {
   font-family: "Poppins";
@@ -397,20 +423,9 @@ body {
 }
 
 .main {
-  padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 40px;
-}
-@media (min-width: 1024px) {
-  .main {
-    padding: 50px 60px;
-  }
-}
-@media (min-width: 1400px) {
-  .main {
-    padding: 50px 80px;
-  }
 }
 .main .reviews {
   display: flex;
@@ -486,21 +501,10 @@ body {
 }
 
 .featured {
-  padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 40px;
   background-color: #f5fafe;
-}
-@media (min-width: 1024px) {
-  .featured {
-    padding: 50px 60px;
-  }
-}
-@media (min-width: 1400px) {
-  .featured {
-    padding: 50px 80px;
-  }
 }
 @media (min-width: 1024px) {
   .featured__cta {
@@ -603,14 +607,6 @@ body {
   }
 }
 
-.stats {
-  padding: 20px;
-}
-@media (min-width: 1024px) {
-  .stats {
-    padding: 40px 20px;
-  }
-}
 @media (min-width: 1024px) {
   .stats__top {
     display: grid;
@@ -643,7 +639,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 20px;
   background-color: #063183;
 }
 @media (min-width: 1024px) {
@@ -666,6 +661,7 @@ body {
     position: relative;
     justify-content: center;
     gap: 25px;
+    padding: 40px;
   }
 }
 @media (min-width: 1024px) {
@@ -694,9 +690,6 @@ body {
   width: 100%;
 }
 
-.footer {
-  padding: 20px;
-}
 .footer__top {
   display: flex;
   flex-direction: column;

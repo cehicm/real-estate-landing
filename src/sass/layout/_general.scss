@@ -1,3 +1,5 @@
+@import "../variables/breakpoints";
+
 ul > li {
 	list-style: none;
 }
@@ -18,4 +20,20 @@ h4,
 h5,
 p {
 	margin: 0;
+}
+
+.main,
+.featured,
+.stats,
+.cta,
+.footer {
+	margin: 20px;
+
+	@include sc-breakpoint(1024) {
+		margin: 50px 60px;
+	}
+
+	@include sc-breakpoint(1400) {
+		margin: 50px 80px;
+	}
 }

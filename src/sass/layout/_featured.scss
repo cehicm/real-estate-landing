@@ -2,19 +2,10 @@
 @import "../variables/breakpoints";
 
 .featured {
-	padding: 20px;
 	display: flex;
 	flex-direction: column;
 	gap: 40px;
 	background-color: colors.$featured-bg-gray;
-
-	@include sc-breakpoint(1024) {
-		padding: 50px 60px;
-	}
-
-	@include sc-breakpoint(1400) {
-		padding: 50px 80px;
-	}
 
 	&__cta {
 		@include sc-breakpoint(1024) {
