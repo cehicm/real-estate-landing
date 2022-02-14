@@ -4,6 +4,7 @@
 .featured {
 	display: flex;
 	flex-direction: column;
+	padding: 4%;
 	gap: 40px;
 	background-color: colors.$featured-bg-gray;
 
@@ -34,10 +35,15 @@
 	}
 
 	&__properties {
-		@include sc-breakpoint(1024) {
+		@include sc-breakpoint(768) {
 			display: flex;
+			flex-direction: column;
 			gap: 20px;
 			justify-content: space-between;
+		}
+
+		@include sc-breakpoint(1024) {
+			flex-direction: row;
 		}
 	}
 
@@ -46,12 +52,19 @@
 		border-radius: 12px;
 		margin-bottom: 20px;
 
+		@include sc-breakpoint(1400) {
+			width: 30%;
+		}
+
 		&__image {
 			width: 100%;
-			transition: transform 0.2s;
 
-			&:hover {
-				transform: scale(1.1);
+			@include sc-breakpoint(1024) {
+				transition: transform 0.2s;
+
+				&:hover {
+					transform: scale(1.1);
+				}
 			}
 		}
 

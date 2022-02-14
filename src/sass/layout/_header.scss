@@ -13,6 +13,10 @@
 		background-size: 400px;
 	}
 
+	@include sc-breakpoint(1400) {
+		background-size: 500px;
+	}
+
 	&__content {
 		display: flex;
 		flex-direction: column;
@@ -22,7 +26,7 @@
 		text-align: center;
 
 		@include sc-breakpoint(1024) {
-			width: 62%;
+			max-width: 600px;
 			padding: 50px 0;
 			align-items: flex-start;
 			text-align: left;
@@ -93,8 +97,9 @@
 			margin: 10px 0;
 
 			@include sc-breakpoint(1024) {
-				flex-direction: row;
 				grid-column: 12;
+				flex-direction: row;
+				gap: 10px;
 				justify-self: end;
 				margin: 0;
 			}

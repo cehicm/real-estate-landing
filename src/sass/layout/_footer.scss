@@ -28,6 +28,10 @@
 
 			@include sc-breakpoint(1024) {
 				padding: 10px 0;
+
+				&:hover {
+					filter: invert(1);
+				}
 			}
 		}
 

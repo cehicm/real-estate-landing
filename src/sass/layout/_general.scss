@@ -40,12 +40,3 @@ p {
 		padding: 5% 8%;
 	}
 }
-
-.header,
-.container,
-.footer {
-	@include sc-breakpoint(1820) {
-		max-width: 2000px;
-		margin: 0 auto;
-	}
-}

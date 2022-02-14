@@ -5,10 +5,16 @@ body {
 	font-family: "Poppins";
 }
 
-.nav > * {
+.nav__list__item > * {
 	font-size: 14px;
 	font-weight: 500;
 	line-height: 21px;
+	color: colors.$black;
+
+	&:hover {
+		text-decoration: underline;
+		text-underline-offset: 3px;
+	}
 }
 
 .header {
@@ -40,7 +46,7 @@ body {
 			text-align: center;
 		}
 
-		@include sc-breakpoint(768) {
+		@include sc-breakpoint(1024) {
 			text-align: left;
 		}
 	}
@@ -245,6 +251,11 @@ body {
 			font-weight: 400;
 			line-height: 24px;
 			color: colors.$text-light-gray;
+
+			&:hover {
+				text-decoration: underline;
+				text-underline-offset: 3px;
+			}
 		}
 	}
 

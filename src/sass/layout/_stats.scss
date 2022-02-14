@@ -21,6 +21,16 @@
 	&__image {
 		padding: 20px 0;
 
+		img {
+			@include sc-breakpoint(1024) {
+				transition: transform 0.2s;
+
+				&:hover {
+					transform: scale(1.2);
+				}
+			}
+		}
+
 		@include sc-breakpoint(1024) {
 			position: absolute;
 			left: 100px;
@@ -76,6 +86,10 @@
 		@include sc-breakpoint(1024) {
 			display: flex;
 			justify-content: space-around;
+		}
+
+		@include sc-breakpoint(1400) {
+			margin-top: 180px;
 		}
 	}
 }
