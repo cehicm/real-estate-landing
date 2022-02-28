@@ -6,7 +6,7 @@
 	background-color: colors.$background-light-blue;
 
 	@include sc-breakpoint(1024) {
-		padding: 3% 6%;
+		padding: 5% 8%;
 		background-image: url("/src/images/house\ illustration.svg");
 		background-repeat: no-repeat;
 		background-position: right bottom;

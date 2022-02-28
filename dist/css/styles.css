@@ -39,12 +39,21 @@ p {
   }
 }
 
-.featured {
+.featured,
+.header {
   padding: 8%;
 }
 @media (min-width: 768px) {
-  .featured {
+  .featured,
+.header {
     padding: 5% 8%;
+  }
+}
+
+@media (min-width: 1820px) {
+  body {
+    max-width: 1440px;
+    margin: 0 auto;
   }
 }
 
@@ -350,7 +359,7 @@ body {
 }
 @media (min-width: 1024px) {
   .header {
-    padding: 3% 6%;
+    padding: 5% 8%;
     background-image: url("/src/images/house illustration.svg");
     background-repeat: no-repeat;
     background-position: right bottom;

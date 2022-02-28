@@ -33,10 +33,18 @@ p {
 	}
 }
 
-.featured {
+.featured,
+.header {
 	padding: 8%;
 
 	@include sc-breakpoint(768) {
 		padding: 5% 8%;
+	}
+}
+
+body {
+	@include sc-breakpoint(1820) {
+		max-width: 1440px;
+		margin: 0 auto;
 	}
 }
