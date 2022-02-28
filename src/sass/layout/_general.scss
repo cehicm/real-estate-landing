@@ -37,18 +37,22 @@ button:hover {
 .stats,
 .cta,
 .footer {
-	margin: 8%;
+	margin: 40px;
 
 	@include sc-breakpoint(768) {
-		margin: 5% 8%;
+		margin: 60px 80px;
+	}
+
+	@include sc-breakpoint(1400) {
+		margin: 120px 160px;
 	}
 }
 
 .featured,
 .header {
-	padding: 8%;
+	padding: 40px;
 
 	@include sc-breakpoint(768) {
-		padding: 5% 8%;
+		padding: 60px 80px;
 	}
 }

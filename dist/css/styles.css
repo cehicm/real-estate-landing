@@ -39,25 +39,33 @@ button:hover {
 .stats,
 .cta,
 .footer {
-  margin: 8%;
+  margin: 40px;
 }
 @media (min-width: 768px) {
   .main,
 .stats,
 .cta,
 .footer {
-    margin: 5% 8%;
+    margin: 60px 80px;
+  }
+}
+@media (min-width: 1400px) {
+  .main,
+.stats,
+.cta,
+.footer {
+    margin: 120px 160px;
   }
 }
 
 .featured,
 .header {
-  padding: 8%;
+  padding: 40px;
 }
 @media (min-width: 768px) {
   .featured,
 .header {
-    padding: 5% 8%;
+    padding: 60px 80px;
   }
 }
 
@@ -470,7 +478,6 @@ body {
 .main {
   display: flex;
   flex-direction: column;
-  gap: 40px;
 }
 .main .reviews {
   display: flex;
@@ -482,6 +489,7 @@ body {
   .main .reviews {
     display: grid;
     justify-content: space-between;
+    margin-bottom: 100px;
   }
 }
 @media (min-width: 1024px) {
@@ -499,6 +507,11 @@ body {
   .main .clients {
     display: flex;
     gap: 60px;
+  }
+}
+@media (min-width: 1024px) {
+  .main .clients {
+    margin-bottom: 140px;
   }
 }
 @media (min-width: 768px) {
@@ -529,15 +542,9 @@ body {
     gap: 30px;
   }
 }
-@media (min-width: 1024px) {
-  .main .about {
-    padding: 40px 0;
-  }
-}
 .main .about__guide {
   display: flex;
   gap: 20px;
-  padding: 20px 0;
 }
 @media (min-width: 768px) {
   .main .about__guide {
@@ -553,7 +560,7 @@ body {
 }
 @media (min-width: 1024px) {
   .main .about__guide__button {
-    margin-top: 20px;
+    margin-top: 50px;
   }
 }
 .main .about__content {
@@ -567,6 +574,7 @@ body {
 @media (min-width: 1024px) {
   .main .about__content {
     width: 60%;
+    margin-bottom: 110px;
   }
 }
 
@@ -761,6 +769,9 @@ body {
     position: relative;
     height: 330px;
   }
+}
+.cta__text {
+  padding: 0 20px;
 }
 .cta__content {
   display: flex;
