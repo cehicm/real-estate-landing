@@ -1,6 +1,5 @@
 (function () {
-    const menuIcon = $(".nav__menu__icon");
-    $(menuIcon).on("click", function () {
-        menuIcon.nextAll().slideToggle("slow");
-    });
+	$(".nav__menu__icon").on("click", function () {
+		$(this).next().slideToggle("slow");
+	});
 })(jQuery);

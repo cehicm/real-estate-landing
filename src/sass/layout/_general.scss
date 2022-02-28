@@ -1,5 +1,12 @@
 @import "../variables/breakpoints";
 
+body {
+	@include sc-breakpoint(1820) {
+		max-width: 1440px;
+		margin: 0 auto;
+	}
+}
+
 ul > li {
 	list-style: none;
 }
@@ -22,6 +29,10 @@ p {
 	margin: 0;
 }
 
+button:hover {
+	cursor: pointer;
+}
+
 .main,
 .stats,
 .cta,
@@ -39,12 +50,5 @@ p {
 
 	@include sc-breakpoint(768) {
 		padding: 5% 8%;
-	}
-}
-
-body {
-	@include sc-breakpoint(1820) {
-		max-width: 1440px;
-		margin: 0 auto;
 	}
 }

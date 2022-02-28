@@ -2,6 +2,13 @@ body {
   margin: 0;
 }
 
+@media (min-width: 1820px) {
+  body {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+
 ul > li {
   list-style: none;
 }
@@ -22,6 +29,10 @@ h4,
 h5,
 p {
   margin: 0;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 .main,
@@ -47,13 +58,6 @@ p {
   .featured,
 .header {
     padding: 5% 8%;
-  }
-}
-
-@media (min-width: 1820px) {
-  body {
-    max-width: 1440px;
-    margin: 0 auto;
   }
 }
 
@@ -325,7 +329,7 @@ body {
 .button {
   display: flex;
   justify-content: center;
-  padding: 13px 15px;
+  padding: 15px 37px;
   border: none;
   border-radius: 12px;
 }
@@ -340,7 +344,7 @@ body {
 .button--full {
   color: #ffffff;
   background-color: #0f1b4c;
-  transition: background-color 1s;
+  transition: background-color 1s, color 1s;
 }
 .button--full:hover, .button--full:active {
   color: #000339;
@@ -348,9 +352,79 @@ body {
 }
 .button--transparent {
   background: none;
+  transition: background-color 1s;
 }
 .button--transparent:hover, .button--transparent:active {
   border: 1px solid #0f1b4c;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (min-width: 1024px) {
+  .nav {
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+  }
+}
+.nav__menu {
+  display: none;
+  width: 100%;
+  grid-column: 1/-1;
+  background-color: #ffffff;
+}
+@media (min-width: 1024px) {
+  .nav__menu {
+    display: grid;
+    background: none;
+    grid-row: 1;
+    grid-column: 3/-1;
+  }
+}
+.nav__menu__icon {
+  justify-self: flex-end;
+}
+@media (min-width: 1024px) {
+  .nav__menu__icon {
+    display: none;
+  }
+}
+.nav__menu__icon path {
+  fill: #0f1b4c;
+}
+@media (min-width: 1024px) {
+  .nav__logo {
+    grid-row: 1;
+    grid-column: 1;
+  }
+}
+.nav__list {
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .nav__list {
+    display: flex;
+    gap: 20px;
+  }
+}
+.nav__list__item {
+  padding: 10px 0;
+}
+.nav__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+}
+@media (min-width: 1024px) {
+  .nav__buttons {
+    grid-column: 12;
+    flex-direction: row;
+    gap: 10px;
+    justify-self: end;
+    margin: 0;
+  }
 }
 
 .header {
@@ -359,7 +433,7 @@ body {
 }
 @media (min-width: 1024px) {
   .header {
-    padding: 5% 8%;
+    padding: 38px 65px;
     background-image: url("/src/images/house illustration.svg");
     background-repeat: no-repeat;
     background-position: right bottom;
@@ -368,97 +442,29 @@ body {
 }
 @media (min-width: 1400px) {
   .header {
-    background-size: 500px;
+    padding: 38px 165px;
+    background-size: 650px;
   }
 }
 .header__content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px;
+  gap: 20px;
   padding: 30px 0;
   text-align: center;
 }
 @media (min-width: 1024px) {
   .header__content {
     max-width: 600px;
-    padding: 50px 0;
+    padding: 130px 0;
     align-items: flex-start;
     text-align: left;
   }
 }
 .header__content .header__button {
-  margin-top: 10px;
+  margin-top: 30px;
   border-radius: 8px;
-}
-.header .nav {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-@media (min-width: 1024px) {
-  .header .nav {
-    grid-template-columns: repeat(12, 1fr);
-    align-items: center;
-  }
-}
-.header .nav__menu {
-  display: none;
-  width: 100%;
-  grid-column: 1/-1;
-  padding: 15px 0;
-  background-color: #ffffff;
-}
-@media (min-width: 1024px) {
-  .header .nav__menu {
-    display: grid;
-    background: none;
-    grid-row: 1;
-    grid-column: 3/-1;
-  }
-}
-.header .nav__menu__icon {
-  justify-self: flex-end;
-}
-@media (min-width: 1024px) {
-  .header .nav__menu__icon {
-    display: none;
-  }
-}
-@media (min-width: 1024px) {
-  .header .nav__logo {
-    grid-row: 1;
-    grid-column: 1;
-  }
-}
-.header .nav__list {
-  text-align: center;
-}
-@media (min-width: 1024px) {
-  .header .nav__list {
-    display: flex;
-    gap: 20px;
-  }
-}
-.header .nav__list__item {
-  padding: 10px 0;
-}
-.header .nav__buttons {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 10px 0;
-}
-@media (min-width: 1024px) {
-  .header .nav__buttons {
-    grid-column: 12;
-    flex-direction: row;
-    gap: 10px;
-    justify-self: end;
-    margin: 0;
-  }
-}
-.header .nav__buttons button {
-  width: 100px;
 }
 
 .main {
