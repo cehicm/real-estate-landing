@@ -337,7 +337,7 @@ body {
 .button {
   display: flex;
   justify-content: center;
-  padding: 15px 37px;
+  padding: 15px 24px;
   border: none;
   border-radius: 12px;
 }
