@@ -921,18 +921,17 @@ body {
   text-align: center;
 }
 .footer__top {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  align-items: center;
-  text-align: center;
+  display: grid;
+  row-gap: 50px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 425px) {
   .footer__top {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
-    gap: initial;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 768px) {
+  .footer__top {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 .footer__list__title {
@@ -959,11 +958,15 @@ body {
     gap: 20px;
   }
 }
-@media (min-width: 1024px) {
+.footer__list__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
   .footer__list__container {
     text-align: left;
-    flex-grow: 1;
-    flex-basis: 0;
+    align-items: baseline;
   }
 }
 .footer__bottom {

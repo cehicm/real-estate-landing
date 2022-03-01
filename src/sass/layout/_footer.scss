@@ -4,17 +4,22 @@
 	text-align: center;
 
 	&__top {
-		display: flex;
-		flex-direction: column;
-		gap: 30px;
-		align-items: center;
-		text-align: center;
+		display: grid;
+		row-gap: 50px;
+
+		@include sc-breakpoint(425) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@include sc-breakpoint(768) {
+			grid-template-columns: repeat(4, 1fr);
+		}
 
 		@include sc-breakpoint(1024) {
-			flex-direction: row;
-			justify-content: space-between;
-			align-items: baseline;
-			gap: initial;
+			// flex-direction: row;
+			// justify-content: space-between;
+			// align-items: baseline;
+			// gap: initial;
 		}
 	}
 
@@ -46,10 +51,13 @@
 		}
 
 		&__container {
-			@include sc-breakpoint(1024) {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+
+			@include sc-breakpoint(768) {
 				text-align: left;
-				flex-grow: 1;
-				flex-basis: 0;
+				align-items: baseline;
 			}
 		}
 	}
