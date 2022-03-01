@@ -489,7 +489,7 @@ body {
   .main .reviews {
     display: grid;
     justify-content: space-between;
-    margin-bottom: 100px;
+    margin-bottom: 96px;
   }
 }
 @media (min-width: 1024px) {
@@ -511,7 +511,7 @@ body {
 }
 @media (min-width: 1024px) {
   .main .clients {
-    margin-bottom: 140px;
+    margin-bottom: 160px;
   }
 }
 @media (min-width: 768px) {
@@ -542,6 +542,11 @@ body {
     gap: 30px;
   }
 }
+@media (min-width: 1024px) {
+  .main .about {
+    margin-bottom: 50px;
+  }
+}
 .main .about__guide {
   display: flex;
   gap: 20px;
@@ -558,11 +563,6 @@ body {
     text-align: center;
   }
 }
-@media (min-width: 1024px) {
-  .main .about__guide__button {
-    margin-top: 50px;
-  }
-}
 .main .about__content {
   position: relative;
 }
@@ -574,7 +574,7 @@ body {
 @media (min-width: 1024px) {
   .main .about__content {
     width: 60%;
-    margin-bottom: 110px;
+    margin-bottom: 79px;
   }
 }
 

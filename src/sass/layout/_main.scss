@@ -14,7 +14,7 @@
 		@include sc-breakpoint(1024) {
 			display: grid;
 			justify-content: space-between;
-			margin-bottom: 100px;
+			margin-bottom: 96px;
 		}
 
 		&__stars {
@@ -36,7 +36,7 @@
 		}
 
 		@include sc-breakpoint(1024) {
-			margin-bottom: 140px;
+			margin-bottom: 160px;
 		}
 
 		&__logo {
@@ -69,6 +69,10 @@
 			gap: 30px;
 		}
 
+		@include sc-breakpoint(1024) {
+			margin-bottom: 50px;
+		}
+
 		&__guide {
 			display: flex;
 			gap: 20px;
@@ -82,12 +86,6 @@
 				gap: 100px;
 				text-align: center;
 			}
-
-			&__button {
-				@include sc-breakpoint(1024) {
-					margin-top: 50px;
-				}
-			}
 		}
 
 		&__content {
@@ -99,7 +97,7 @@
 
 			@include sc-breakpoint(1024) {
 				width: 60%;
-				margin-bottom: 110px;
+				margin-bottom: 79px;
 			}
 		}
 	}
