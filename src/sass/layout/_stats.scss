@@ -21,6 +21,18 @@
 	&__image {
 		padding: 20px 0;
 
+		@include sc-breakpoint(1024) {
+			height: 460px;
+			width: 400px;
+			left: 29px;
+			padding: 0;
+		}
+
+		@include sc-breakpoint(1400) {
+			position: absolute;
+			left: 165px;
+		}
+
 		img {
 			@include sc-breakpoint(1024) {
 				transition: transform 0.2s;
@@ -29,11 +41,6 @@
 					transform: scale(1.2);
 				}
 			}
-		}
-
-		@include sc-breakpoint(1024) {
-			position: absolute;
-			left: 100px;
 		}
 	}
 
@@ -49,6 +56,7 @@
 			width: 40%;
 			position: absolute;
 			left: 40px;
+			transform: translateX(-40px);
 			padding: 20px;
 			background: colors.$white;
 			z-index: 2;
@@ -71,6 +79,10 @@
 			width: 70%;
 			padding: 100px 0;
 			justify-self: center;
+		}
+
+		@include sc-breakpoint(1400) {
+			width: 57%;
 		}
 
 		&__text {

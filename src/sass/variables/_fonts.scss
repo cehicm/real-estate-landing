@@ -192,6 +192,15 @@ body {
 				@include sc-breakpoint(1024) {
 					width: 45px;
 					right: 42%;
+					transform: translate(70%, -120%);
+				}
+
+				@include sc-breakpoint(1400) {
+					transform: translate(110%, -120%);
+				}
+
+				@include sc-breakpoint(1820) {
+					transform: translate(-90%, -120%);
 				}
 			}
 		}
@@ -202,6 +211,10 @@ body {
 			line-height: 30px;
 			color: colors.$text-light-gray;
 			text-align: justify;
+
+			@include sc-breakpoint(1024) {
+				text-align: left;
+			}
 		}
 	}
 
