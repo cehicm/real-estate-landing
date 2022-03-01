@@ -55,19 +55,18 @@
 		background-color: colors.$white;
 		border-radius: 12px;
 		margin-bottom: 20px;
+		overflow: hidden;
 
 		@include sc-breakpoint(1400) {
 			width: 30%;
 		}
 
 		&__image {
-			width: 100%;
-
 			@include sc-breakpoint(1024) {
 				transition: transform 0.2s;
 
 				&:hover {
-					transform: scale(1.1);
+					transform: scale(1.5);
 				}
 			}
 		}
@@ -95,5 +94,10 @@
 				}
 			}
 		}
+	}
+
+	&__image {
+		overflow: hidden;
+		height: 227px;
 	}
 }

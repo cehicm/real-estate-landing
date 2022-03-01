@@ -642,21 +642,19 @@ body {
   background-color: #ffffff;
   border-radius: 12px;
   margin-bottom: 20px;
+  overflow: hidden;
 }
 @media (min-width: 1400px) {
   .featured__item {
     width: 30%;
   }
 }
-.featured__item__image {
-  width: 100%;
-}
 @media (min-width: 1024px) {
   .featured__item__image {
     transition: transform 0.2s;
   }
   .featured__item__image:hover {
-    transform: scale(1.1);
+    transform: scale(1.5);
   }
 }
 .featured__item__description {
@@ -677,6 +675,10 @@ body {
   .featured__item__stats .info__text {
     padding-left: 5px;
   }
+}
+.featured__image {
+  overflow: hidden;
+  height: 227px;
 }
 
 @media (min-width: 1024px) {
